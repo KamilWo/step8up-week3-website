@@ -1,5 +1,11 @@
 # Changelog
 
+### v0.3.0
+
+- Original website added
+- Boostrap links for CSS and JS bundle added
+- jQuery JS library added
+
 ### v0.2.0
 
 - Requirements added
