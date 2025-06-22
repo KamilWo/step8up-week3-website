@@ -6,8 +6,9 @@ document.addEventListener('DOMContentLoaded', () => {
     mobileNav: document.getElementById('nav-mobile'),
     searchInput: document.getElementById('search-input'),
     contactForm: document.getElementById('contactForm'),
-    messageBox: document.getElementById('message-box'),
-    messageText: document.getElementById('messageText')
+    modalBox: document.getElementById('modal-box'),
+    modalText: document.getElementById('modal-text'),
+    modalTitle: document.getElementById('modal-title'),
   };
 
   // Theme Management
@@ -81,12 +82,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Message Box Management
   const messageBoxManager = {
-    show: (message) => {
-      initElements.messageText.textContent = message;
-      initElements.messageBox.classList.add('show');
+    show: (title, message) => {
+      initElements.modalTitle.textContent = title;
+      initElements.modalText.textContent = message;
+      const modal = new bootstrap.Modal(initElements.modalBox);
+      modal.show();
     },
     hide: () => {
-      initElements.messageBox.classList.remove('show');
+      const modal = bootstrap.Modal.getInstance(initElements.modalBox);
+      if (modal) {
+        modal.hide();
+      }
     }
   };
 
@@ -124,7 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         if (allValid) {
-          messageBoxManager.show('Thank you for your message! We will get back to you soon.');
+          messageBoxManager.show('Thank you', 'Thank you for your message! We will get back to you soon.');
           initElements.contactForm.reset();
           initElements.contactForm.querySelectorAll('.input-group').forEach(group => {
             group.classList.remove('valid', 'invalid');
