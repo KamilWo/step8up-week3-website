@@ -49,8 +49,8 @@ This migrated website now boasts the following core functionalities and features
 * **Integrated Bootstrap Components**:
   * **Navbar**: A fully responsive navigation bar replaces the original menu, providing intuitive navigation across different pages.
   * **Cards**: Content sections are styled using Bootstrap Cards, offering a clean and organized presentation.
-  * **Buttons**: All interactive buttons now utilize Bootstrap's styling, ensuring consistent visual feedback and accessibility.
-  * ????
+  * **Buttons**: All interactive buttons now utilise Bootstrap's styling, ensuring consistent visual feedback and accessibility.
+  * **Modals**: Dialog boxes to interact with the user dynamically enhance the experience.
 * Extensive use of Bootstrap utility classes for spacing (`mt-`, `mb-`, `p-`), text alignment (`text-center`, `text-left`), background colors (`bg-primary`, `bg-light`), and more, resulting in a lean and maintainable stylesheet.
 * **jQuery**: ????
 
@@ -61,7 +61,7 @@ This migrated website now boasts the following core functionalities and features
 **Bootstrap** is an excellent choice for front-end development due to several key advantages:
 
 * Its mobile-first approach and powerful grid system make creating responsive websites significantly easier and faster, saving developers considerable time and effort.
-* Bootstrap provides a rich library of ready-to-use UI components (navbars, carousels, forms, cards, etc.). This accelerates development, ensures consistency, and reduces the need to write custom CSS for common elements.
+* Bootstrap provides a rich library of ready-to-use UI components (navbars, carousels, forms, cards, modals, etc.). This accelerates development, ensures consistency, and reduces the need to write custom CSS for common elements.
 * The extensive set of utility classes allows for rapid styling directly in the HTML, minimizing the need for custom CSS and promoting highly reusable styles. This leads to smaller CSS file sizes and easier maintenance.
 * By using a standardized framework, designs inherently gain a professional and consistent look and feel across different parts of the application.
 * Bootstrap has a massive and active community, along with comprehensive and clear documentation, making it easy to find solutions and learn.
