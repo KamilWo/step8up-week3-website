@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kamil's Bicycle Hub - Products</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon_32x32.png">
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous">
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- Google Font: Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Google font Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<!-- Message Box HTML -->
+<div id="message-box">
+  <p id="messageText"></p>
+  <button type="button" onclick="hideMessageBox()">OK</button>
+</div>
+
+<!-- Header Section -->
+<header>
+  <div class="header-content container">
+    <!-- Logo and Company Name -->
+    <a href="./index.html" class="logo" data-nav-target="home">
+      <i class="fas fa-bicycle"></i> Kamil's Bicycle Hub
+    </a>
+
+    <!-- Desktop Navigation Menu -->
+    <nav class="nav-desktop">
+      <a href="./index.html" data-nav-target="home">Home</a>
+      <a href="./products.html" data-nav-target="products">Products</a>
+      <a href="./services.html" data-nav-target="services">Services</a>
+      <a href="./about.html" data-nav-target="about">About</a>
+    </nav>
+
+    <!-- Right-aligned Header Elements -->
+    <div class="header-right">
+      <!-- Search Bar -->
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search...">
+        <button type="submit"><i class="fas fa-search"></i></button>
+      </div>
+
+      <!-- Dark Mode Toggle -->
+      <i class="fas fa-moon dark-mode-toggle" id="dark-mode-toggle"></i>
+
+      <!-- Contact Me Button -->
+      <a href="./contact.html" class="btn" data-nav-target="contact">Contact Us</a>
+
+      <!-- Mobile Menu Toggle (Hamburger Icon) -->
+      <i class="fas fa-bars menu-toggle" id="menu-toggle"></i>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Navigation Menu -->
+<nav class="nav-mobile" id="nav-mobile">
+  <a href="./index.html" data-nav-target="home">Home</a>
+  <a href="./products.html" data-nav-target="products">Products</a>
+  <a href="./services.html" data-nav-target="services">Services</a>
+  <a href="./about.html" data-nav-target="about">About</a>
+  <a href="./contact.html" data-nav-target="contact">Contact Us</a>
+  <!-- Search Bar -->
+  <div class="search-container2">
+    <input type="text" id="search-input2" placeholder="Search...">
+    <button type="submit"><i class="fas fa-search"></i></button>
+  </div>
+</nav>
+
+<!-- Main Content Area -->
+<main>
+  <section id="products">
+    <div class="container">
+      <h2>Our Bicycle Collections</h2>
+      <p>Explore a wide range of bicycles tailored for every rider and terrain.</p>
+      <div class="card-grid">
+        <!-- Product Card 1 -->
+        <div class="card">
+          <img src="./assets/images/products/mountain_bike.jpg" alt="Mountain Bike">
+          <h3>Trail Blazer MTB</h3>
+          <p>Dominate any trail with this robust and agile mountain bike, designed for extreme performance.</p>
+          <a href="./more_details.html" class="btn">More Details</a>
+        </div>
+        <!-- Product Card 2 -->
+        <div class="card">
+          <img src="./assets/images/products/road_bike.jpg" alt="Road Bike">
+          <h3>Speed Demon Road</h3>
+          <p>Experience unparalleled speed and efficiency on the road with this lightweight racing machine.</p>
+          <a href="./more_details.html" class="btn">More Details</a>
+        </div>
+        <!-- Product Card 3 -->
+        <div class="card">
+          <img src="./assets/images/products/electric_bike.jpg" alt="Electric Bike">
+          <h3>Volt Explorer E-Bike</h3>
+          <p>Effortlessly conquer hills and long distances with powerful electric assistance.</p>
+          <a href="./more_details.html" class="btn">More Details</a>
+        </div>
+        <!-- Product Card 4 -->
+        <div class="card">
+          <img src="./assets/images/products/city_bike.jpg" alt="City Bike">
+          <h3>Urban Cruiser City</h3>
+          <p>Navigate city streets with comfort and style. Perfect for daily commutes and leisurely rides.</p>
+          <a href="./more_details.html" class="btn">More Details</a>
+        </div>
+        <!-- Product Card 5 -->
+        <div class="card">
+          <img src="./assets/images/products/kids_bike.jpg" alt="Kids Bike">
+          <h3>Little Rider Joy</h3>
+          <p>Safe and fun bikes for the little ones, encouraging outdoor adventure from an early age.</p>
+          <a href="./more_details.html" class="btn">More Details</a>
+        </div>
+        <!-- Product Card 6 -->
+        <div class="card">
+          <img src="./assets/images/products/hybrid_bike.jpg" alt="Hybrid Bike">
+          <h3>Versa Commuter Hybrid</h3>
+          <p>The best of both worlds – comfort for city rides and durability for light trails.</p>
+          <a href="./more_details.html" class="btn">More Details</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer Section -->
+<footer>
+  <div class="container">
+    <div class="footer-links">
+      <a href="./terms.html">Terms and Conditions</a>
+      <a href="./privacy.html">Privacy Policy</a>
+      <a href="./site_map.html">Sitemap</a>
+    </div>
+    <p class="copyright">Copyright &copy; 2025 Kamil Wozniak.</p>
+  </div>
+</footer>
+
+<!-- Fixed "Get in Touch" Button -->
+<a href="./contact.html" class="get-in-touch-fixed btn" data-nav-target="contact">Get in Touch</a>
+
+<!-- jQuery 3.7.1 Javascript library-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- Bootstrap 5.3 JavaScript Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+<script src="./assets/js/scripts.js"></script>
+</body>
+</html>
