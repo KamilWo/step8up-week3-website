@@ -1,5 +1,9 @@
 # Changelog
 
+### v0.4.0
+
+- Boostrap modal replaced message-box
+
 ### v0.3.1
 
 - Updated Bootstrap docs links to 5.3 in README
