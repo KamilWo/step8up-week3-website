@@ -159,9 +159,9 @@ Together, Bootstrap and jQuery provide a powerful combination for building moder
 
 The following resources were invaluable during the development of this project:
 
-- [Bootstrap Documentation](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
-- [Bootstrap Components](https://getbootstrap.com/docs/4.5/components/alerts/)
-- [Bootstrap Utility Classes](https://getbootstrap.com/docs/4.5/utilities/spacing/)
+- [Bootstrap Documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+- [Bootstrap Components](https://getbootstrap.com/docs/5.3/components/alerts/)
+- [Bootstrap Utility Classes](https://getbootstrap.com/docs/5.3/utilities/spacing/)
 - [GitHub Pages: Getting Started](https://docs.github.com/en/pages/getting-started-with-github-pages)
 - [jQuery UI Widgets Documentation](https://api.jqueryui.com/category/widgets/)
 - [jQuery UI Demos and Code Samples](https://jqueryui.com/)
