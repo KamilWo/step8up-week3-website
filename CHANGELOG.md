@@ -1,5 +1,9 @@
 # Changelog
 
+### v0.3.1
+
+- Updated Bootstrap docs links to 5.3 in README
+
 ### v0.3.0
 
 - Original website added
