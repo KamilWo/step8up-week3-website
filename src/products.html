@@ -60,7 +60,7 @@
           <form class="d-flex my-2 my-lg-0 order-lg-1 me-lg-2" role="search">
             <div class="input-group">
               <input type="text" class="form-control" id="search-input" placeholder="Search..." aria-label="Search">
-              <button class="btn btn-outline-secondary" type="submit"><i class="fas fa-search"></i></button>
+              <button class="btn btn-outline-secondary ms-2" type="submit"><i class="fas fa-search"></i></button>
             </div>
           </form>
 
@@ -76,52 +76,70 @@
 
 <!-- Main Content Area -->
 <main>
-  <section id="products">
+  <section id="products" class="py-5">
     <div class="container">
-      <h2>Our Bicycle Collections</h2>
-      <p>Explore a wide range of bicycles tailored for every rider and terrain.</p>
-      <div class="card-grid">
-        <!-- Product Card 1 -->
-        <div class="card">
-          <img src="./assets/images/products/mountain_bike.jpg" alt="Mountain Bike">
-          <h3>Trail Blazer MTB</h3>
-          <p>Dominate any trail with this robust and agile mountain bike, designed for extreme performance.</p>
-          <a href="./more_details.html" class="btn">More Details</a>
+      <h2 class="text-center mb-4">Our Bicycle Collections</h2>
+      <p class="text-center mb-5">Explore a wide range of bicycles tailored for every rider and terrain.</p>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="./assets/images/products/mountain_bike.jpg" class="card-img-top" alt="Mountain Bike">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title">Trail Blazer MTB</h3>
+              <p class="card-text">Dominate any trail with this robust and agile mountain bike, designed for extreme performance.</p>
+              <a href="./more_details.html" class="btn btn-primary mt-auto">More Details</a>
+            </div>
+          </div>
         </div>
-        <!-- Product Card 2 -->
-        <div class="card">
-          <img src="./assets/images/products/road_bike.jpg" alt="Road Bike">
-          <h3>Speed Demon Road</h3>
-          <p>Experience unparalleled speed and efficiency on the road with this lightweight racing machine.</p>
-          <a href="./more_details.html" class="btn">More Details</a>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="./assets/images/products/road_bike.jpg" class="card-img-top" alt="Road Bike">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title">Speed Demon Road</h3>
+              <p class="card-text">Experience unparalleled speed and efficiency on the road with this lightweight racing machine.</p>
+              <a href="./more_details.html" class="btn btn-primary mt-auto">More Details</a>
+            </div>
+          </div>
         </div>
-        <!-- Product Card 3 -->
-        <div class="card">
-          <img src="./assets/images/products/electric_bike.jpg" alt="Electric Bike">
-          <h3>Volt Explorer E-Bike</h3>
-          <p>Effortlessly conquer hills and long distances with powerful electric assistance.</p>
-          <a href="./more_details.html" class="btn">More Details</a>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="./assets/images/products/electric_bike.jpg" class="card-img-top" alt="Electric Bike">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title">Volt Explorer E-Bike</h3>
+              <p class="card-text">Effortlessly conquer hills and long distances with powerful electric assistance.</p>
+              <a href="./more_details.html" class="btn btn-primary mt-auto">More Details</a>
+            </div>
+          </div>
         </div>
-        <!-- Product Card 4 -->
-        <div class="card">
-          <img src="./assets/images/products/city_bike.jpg" alt="City Bike">
-          <h3>Urban Cruiser City</h3>
-          <p>Navigate city streets with comfort and style. Perfect for daily commutes and leisurely rides.</p>
-          <a href="./more_details.html" class="btn">More Details</a>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="./assets/images/products/city_bike.jpg" class="card-img-top" alt="City Bike">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title">Urban Cruiser City</h3>
+              <p class="card-text">Navigate city streets with comfort and style. Perfect for daily commutes and leisurely rides.</p>
+              <a href="./more_details.html" class="btn btn-primary mt-auto">More Details</a>
+            </div>
+          </div>
         </div>
-        <!-- Product Card 5 -->
-        <div class="card">
-          <img src="./assets/images/products/kids_bike.jpg" alt="Kids Bike">
-          <h3>Little Rider Joy</h3>
-          <p>Safe and fun bikes for the little ones, encouraging outdoor adventure from an early age.</p>
-          <a href="./more_details.html" class="btn">More Details</a>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="./assets/images/products/kids_bike.jpg" class="card-img-top" alt="Kids Bike">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title">Little Rider Joy</h3>
+              <p class="card-text">Safe and fun bikes for the little ones, encouraging outdoor adventure from an early age.</p>
+              <a href="./more_details.html" class="btn btn-primary mt-auto">More Details</a>
+            </div>
+          </div>
         </div>
-        <!-- Product Card 6 -->
-        <div class="card">
-          <img src="./assets/images/products/hybrid_bike.jpg" alt="Hybrid Bike">
-          <h3>Versa Commuter Hybrid</h3>
-          <p>The best of both worlds – comfort for city rides and durability for light trails.</p>
-          <a href="./more_details.html" class="btn">More Details</a>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="./assets/images/products/hybrid_bike.jpg" class="card-img-top" alt="Hybrid Bike">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title">Versa Commuter Hybrid</h3>
+              <p class="card-text">The best of both worlds – comfort for city rides and durability for light trails.</p>
+              <a href="./more_details.html" class="btn btn-primary mt-auto">More Details</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
