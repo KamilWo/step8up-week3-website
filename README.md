@@ -165,3 +165,4 @@ The following resources were invaluable during the development of this project:
 - [GitHub Pages: Getting Started](https://docs.github.com/en/pages/getting-started-with-github-pages)
 - [jQuery UI Widgets Documentation](https://api.jqueryui.com/category/widgets/)
 - [jQuery UI Demos and Code Samples](https://jqueryui.com/)
+- [Google Speed Libraries](https://developers.google.com/speed/libraries)
