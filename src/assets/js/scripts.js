@@ -2,8 +2,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const initElements = {
     darkModeToggle: document.getElementById('dark-mode-toggle'),
-    mobileMenuToggle: document.getElementById('menu-toggle'),
-    mobileNav: document.getElementById('nav-mobile'),
     searchInput: document.getElementById('search-input'),
     contactForm: document.getElementById('contactForm'),
     modalBox: document.getElementById('modal-box'),
@@ -29,19 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
       } else {
         themeManager.disableDarkMode();
       }
-    }
-  };
-
-  // Mobile Menu Management
-  const mobileMenuManager = {
-    toggleMenu: () => {
-      initElements.mobileNav.classList.toggle('active');
-      initElements.mobileMenuToggle.classList.toggle('fa-bars');
-      initElements.mobileMenuToggle.classList.toggle('fa-times');
-    },
-    closeMenu: () => {
-      initElements.mobileNav.classList.remove('active');
-      initElements.mobileMenuToggle.classList.replace('fa-times', 'fa-bars');
     }
   };
 
@@ -105,12 +90,6 @@ document.addEventListener('DOMContentLoaded', () => {
       } else {
         themeManager.enableDarkMode();
       }
-    });
-
-    // Mobile Menu
-    initElements.mobileMenuToggle.addEventListener('click', mobileMenuManager.toggleMenu);
-    initElements.mobileNav.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', mobileMenuManager.closeMenu);
     });
 
     // Contact Form
