@@ -1,5 +1,6 @@
 // DOM Elements
-document.addEventListener('DOMContentLoaded', () => {
+// document.addEventListener('DOMContentLoaded', () => {
+$(document).ready(function() {
   const initElements = {
     darkModeToggle: document.getElementById('dark-mode-toggle'),
     searchInput: document.getElementById('search-input'),
@@ -127,4 +128,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Make messageBoxManager.hide globally available for onclick handlers
   window.hideMessageBox = messageBoxManager.hide;
+
+  // Show or hide the button based on scroll position
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) { // Show after scrolling 100px
+      $('#back-to-top').fadeIn();
+    } else {
+      $('#back-to-top').fadeOut();
+    }
+  });
+
+  // Smooth scroll to top when button is clicked
+  $('#back-to-top').on('click', function() {
+    $('html, body').animate({scrollTop: 0}, 800);
+    return false;
+  });
 });
