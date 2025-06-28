@@ -1,5 +1,4 @@
 // DOM Elements
-// document.addEventListener('DOMContentLoaded', () => {
 $(document).ready(function() {
   const initElements = {
     darkModeToggle: document.getElementById('dark-mode-toggle'),
@@ -13,12 +12,12 @@ $(document).ready(function() {
   // Theme Management
   const themeManager = {
     enableDarkMode: () => {
-      document.body.classList.add('dark-mode');
+      document.documentElement.classList.add('dark-mode');
       initElements.darkModeToggle.classList.replace('fa-moon', 'fa-sun');
       localStorage.setItem('theme', 'dark');
     },
     disableDarkMode: () => {
-      document.body.classList.remove('dark-mode');
+      document.documentElement.classList.remove('dark-mode');
       initElements.darkModeToggle.classList.replace('fa-sun', 'fa-moon');
       localStorage.setItem('theme', 'light');
     },
@@ -86,7 +85,7 @@ $(document).ready(function() {
   const initializeEventListeners = () => {
     // Dark Mode Toggle
     initElements.darkModeToggle.addEventListener('click', () => {
-      if (document.body.classList.contains('dark-mode')) {
+      if (document.documentElement.classList.contains('dark-mode')) {
         themeManager.disableDarkMode();
       } else {
         themeManager.enableDarkMode();

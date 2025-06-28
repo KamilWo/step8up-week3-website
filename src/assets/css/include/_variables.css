@@ -63,13 +63,13 @@
   --contact-input-padding-x: 15px;
   --contact-input-padding-y: 8px;
   --dark-mode-toggle-font-size: 24px;
-  --fixed-button-bottom: 80px;
+  --fixed-button-bottom: 20px;
   --fixed-button-font-size: 1.1em;
   --fixed-button-hover-color: #0CA;
   --fixed-button-hover-shadow: 0 8px 20px #00B89499;
   --fixed-button-padding-x: 25px;
   --fixed-button-padding-y: 15px;
-  --fixed-button-right: 30px;
+  --fixed-button-right: 80px;
   --fixed-button-shadow: 0 5px 15px #00B89466;
   --icon-margin-right: 10px;
   --list-item-line-height: 1.5;
