@@ -9,22 +9,22 @@
 
 .contact-methods,
 .contact-form {
-  flex: 1 1 45%;
-  min-width: 300px;
   background-color: var(--light-card-bg);
   border-radius: var(--border-radius-medium);
+  border: 1px solid var(--light-border);
   box-shadow: var(--box-shadow-large);
+  flex: 1 1 45%;
+  min-width: 300px;
   padding: 30px;
   text-align: left;
-  border: 1px solid var(--light-border);
   transition: background-color var(--transition-speed) var(--transition-ease), box-shadow var(--transition-speed) var(--transition-ease);
 }
 
 .contact-methods h3,
 .contact-form h3 {
   color: var(--light-primary);
-  margin-top: 0;
   margin-bottom: var(--gap-large);
+  margin-top: 0;
   text-align: center;
 }
 
@@ -34,16 +34,16 @@
 }
 
 .contact-methods ul li {
-  margin-bottom: 15px;
-  font-size: 1.1em;
-  display: flex;
   align-items: center;
+  display: flex;
+  font-size: 1.1em;
+  margin-bottom: 15px;
 }
 
 .contact-methods ul li i {
-  margin-right: 15px;
   color: var(--light-accent);
   font-size: var(--contact-icon-font-size);
+  margin-right: 15px;
 }
 
 .contact-form form {
@@ -53,36 +53,36 @@
 }
 
 .input-group {
-  position: relative;
-  display: flex;
   align-items: center;
-  border: 1px solid var(--light-input-border);
-  border-radius: var(--border-radius-small);
-  padding: var(--contact-input-padding-y) var(--contact-input-padding-x);
   background-color: var(--light-input-bg);
+  border-radius: var(--border-radius-small);
+  border: 1px solid var(--light-input-border);
+  display: flex;
+  padding: var(--contact-input-padding-y) var(--contact-input-padding-x);
+  position: relative;
   transition: border-color var(--transition-speed) var(--transition-ease), box-shadow var(--transition-speed) var(--transition-ease);
 }
 
 .input-group i {
-  margin-right: var(--icon-margin-right);
   color: var(--light-text);
+  margin-right: var(--icon-margin-right);
   transition: color var(--transition-speed) var(--transition-ease);
 }
 
 .input-group input,
 .input-group textarea {
-  flex-grow: 1;
-  border: none;
   background: none;
-  outline: none;
-  font-size: 1em;
+  border: none;
   color: var(--light-text);
+  flex-grow: 1;
+  font-size: 1em;
+  outline: none;
   padding: 5px 0;
 }
 
 .input-group textarea {
-  resize: vertical;
   min-height: 100px;
+  resize: vertical;
 }
 
 .input-group input:focus,
@@ -92,29 +92,28 @@
 }
 
 .contact-form .btn {
-  width: fit-content;
   align-self: center;
   padding: 12px 40px;
+  width: fit-content;
 }
-
 
 
 /* Message Box Styling */
 #message-box {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  animation: fade-in var(--transition-speed) ease-out;
   background-color: var(--light-card-bg);
-  color: var(--light-text);
-  padding: var(--message-box-padding);
   border-radius: var(--message-box-border-radius);
   box-shadow: var(--message-box-shadow);
-  z-index: 1001;
-  text-align: center;
-  animation: fade-in var(--transition-speed) ease-out;
+  color: var(--light-text);
+  display: none;
+  left: 50%;
   min-width: 300px;
+  padding: var(--message-box-padding);
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1001;
 }
 
 #message-box.show {

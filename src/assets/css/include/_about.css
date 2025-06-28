@@ -1,17 +1,17 @@
 /* About Section */
 .about-content {
-  max-width: var(--max-width-md);
-  margin: 0 auto;
-  text-align: left;
   background-color: var(--light-card-bg);
   border-radius: var(--border-radius-medium);
-  box-shadow: var(--box-shadow-large);
-  padding: var(--about-padding);
   border: 1px solid var(--light-border);
+  box-shadow: var(--box-shadow-large);
+  margin: 0 auto;
+  max-width: var(--max-width-md);
+  padding: var(--about-padding);
+  text-align: left;
   transition: background-color var(--transition-speed) var(--transition-ease), box-shadow var(--transition-speed) var(--transition-ease);
 }
 
 .about-content p {
-  margin-bottom: var(--margin-bottom-default);
   font-size: var(--about-p-font-size);
+  margin-bottom: var(--margin-bottom-default);
 }

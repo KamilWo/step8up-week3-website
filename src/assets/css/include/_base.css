@@ -1,12 +1,12 @@
 /* --- Base Styles --- */
 body {
-  font-family: Inter, sans-serif;
-  margin: 0;
-  padding: 0;
   background-color: var(--light-bg);
   color: var(--light-text);
-  transition: background-color var(--transition-speed) var(--transition-ease), color var(--transition-speed) var(--transition-ease);
+  font-family: Inter, sans-serif;
   line-height: var(--line-height-default);
+  margin: 0;
+  padding: 0;
+  transition: background-color var(--transition-speed) var(--transition-ease), color var(--transition-speed) var(--transition-ease);
 }
 
 h1, h2, h3 {
@@ -26,53 +26,53 @@ section {
 
 header {
   background-color: var(--light-card-bg);
+  box-shadow: 0 var(--header-footer-shadow-offset) var(--header-footer-shadow-blur) var(--header-footer-shadow-color);
   color: var(--light-text);
   padding: var(--header-footer-padding-y) 0;
-  box-shadow: 0 var(--header-footer-shadow-offset) var(--header-footer-shadow-blur) var(--header-footer-shadow-color);
   position: sticky;
   top: 0;
-  z-index: 1000;
   transition: background-color var(--transition-speed) var(--transition-ease), box-shadow var(--transition-speed) var(--transition-ease);
+  z-index: 1000;
 }
 
 footer {
   background-color: var(--light-card-bg);
+  box-shadow: 0 calc(-1 * var(--header-footer-shadow-offset)) var(--header-footer-shadow-blur) var(--header-footer-shadow-color);
   color: var(--light-text);
+  margin-top: 50px;
   padding: 30px 0;
   text-align: center;
-  box-shadow: 0 calc(-1 * var(--header-footer-shadow-offset)) var(--header-footer-shadow-blur) var(--header-footer-shadow-color);
-  margin-top: 50px;
   transition: background-color var(--transition-speed) var(--transition-ease), box-shadow var(--transition-speed) var(--transition-ease);
 }
 
 .footer-link {
   color: var(--light-text);
-  text-decoration: none;
   font-weight: var(--font-weight-medium);
   margin: 0 15px;
   padding: 5px 0;
   position: relative;
+  text-decoration: none;
   transition: color var(--transition-speed) var(--transition-ease);
 }
 
 .footer-link {
   color: var(--light-text);
-  text-decoration: none;
   font-weight: var(--font-weight-medium);
-  position: relative;
   padding: 5px 0;
+  position: relative;
+  text-decoration: none;
   transition: color var(--transition-speed) var(--transition-ease);
 }
 
 .footer-link::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: var(--link-underline-height);
   background-color: var(--light-primary);
+  bottom: 0;
+  content: '';
+  height: var(--link-underline-height);
+  left: 0;
+  position: absolute;
   transition: width var(--transition-speed) var(--transition-ease);
+  width: 0;
 }
 
 .footer-link:hover::after {
@@ -84,8 +84,8 @@ footer {
 }
 
 .copyright {
-  font-size: 0.9em;
   color: var(--light-text);
+  font-size: 0.9em;
 }
 
 .modal {
