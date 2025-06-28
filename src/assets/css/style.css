@@ -975,7 +975,7 @@ footer {
 
 /* Desktop Navigation Effects */
 @media (width >= 992px) {
-  .navbar-nav .nav-item .nav-link {
+  .navbar-nav .nav-item .nav-link, .footer-link {
     color: var(--light-text);
     text-decoration: none;
     font-weight: var(--font-weight-medium);
@@ -985,7 +985,7 @@ footer {
     transition: color var(--transition-speed) var(--transition-ease);
   }
 
-  .navbar-nav .nav-item .nav-link::after {
+  .navbar-nav .nav-item .nav-link::after, .footer-link::after {
     content: '';
     position: absolute;
     left: 0;
@@ -996,11 +996,11 @@ footer {
     transition: width var(--transition-speed) var(--transition-ease);
   }
 
-  .navbar-nav .nav-item .nav-link:hover::after {
+  .navbar-nav .nav-item .nav-link:hover::after, .footer-link:hover::after {
     width: 100%;
   }
 
-  .navbar-nav .nav-item .nav-link:hover {
+  .navbar-nav .nav-item .nav-link:hover, .footer-link:hover {
     color: var(--light-secondary);
   }
 }
