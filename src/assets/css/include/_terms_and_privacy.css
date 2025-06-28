@@ -1,0 +1,42 @@
+/* Terms and Privacy Pages Styles */
+.terms-content,
+.privacy-content {
+  max-width: var(--max-width-sm);
+  margin: 0 auto;
+  padding: var(--terms-privacy-padding);
+}
+
+.terms-content h1,
+.privacy-content h1 {
+  margin-bottom: var(--terms-privacy-h1-margin-bottom);
+  text-align: center;
+}
+
+.terms-content h2,
+.privacy-content h2 {
+  margin-top: var(--terms-privacy-h2-margin-top);
+  margin-bottom: var(--terms-privacy-h2-margin-bottom);
+  color: var(--light-primary);
+}
+
+.terms-content p,
+.privacy-content p {
+  margin-bottom: var(--margin-bottom-default);
+  line-height: var(--line-height-default);
+}
+
+/* Privacy and Terms List Styling */
+.privacy-content ul,
+.terms-content ul {
+  list-style: none;
+  padding-left: var(--padding-default);
+  margin-bottom: var(--margin-bottom-default);
+}
+
+.privacy-content ul li,
+.terms-content ul li {
+  position: relative;
+  padding-left: var(--list-item-padding-left);
+  margin-bottom: var(--list-item-margin-bottom);
+  line-height: var(--list-item-line-height);
+}

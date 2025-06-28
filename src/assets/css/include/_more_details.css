@@ -1,0 +1,34 @@
+/* More Details Page Styles */
+.coming-soon-content {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.coming-soon-icon {
+  font-size: 64px;
+  color: var(--light-primary);
+  margin-bottom: 30px;
+}
+
+.newsletter-signup {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: var(--light-card-bg);
+  border-radius: var(--border-radius-medium);
+  box-shadow: var(--box-shadow-medium);
+}
+
+.newsletter-signup .input-group {
+  display: flex;
+  gap: 10px;
+}
+
+.newsletter-signup input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid var(--light-input-border);
+  border-radius: var(--border-radius-small);
+  background-color: var(--light-input-bg);
+  color: var(--light-text);
+}

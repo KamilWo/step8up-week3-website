@@ -1,0 +1,123 @@
+:root,
+[data-bs-theme="light"] {
+  --border-radius-medium: 12px;
+  --border-radius-small: 8px;
+  --box-shadow-large: 0 4px 15px var(--light-shadow);
+  --box-shadow-medium: 0 4px 10px var(--light-shadow);
+  --button-text-color2: white;
+  --button-text-color: white;
+  --font-weight-bold: 700;
+  --font-weight-medium: 500;
+  --gap-large: 25px;
+  --gap-medium: 20px;
+  --header-footer-padding-y: 15px;
+  --header-footer-shadow-blur: 10px;
+  --header-footer-shadow-color: var(--light-shadow);
+  --header-footer-shadow-offset: 2px;
+  --light-accent: #00B894;
+  --light-bg: #f5f5f5;
+  --light-border: #ddd;
+  --light-card-bg: #fff;
+  --light-input-bg: #fdfdfd;
+  --light-input-border: #ccc;
+  --light-input-focus: #8e7dff;
+  --light-primary: #6C5CE7;
+  --light-secondary: #A29BFE;
+  --light-shadow: #0000001A;
+  --light-text: #333;
+  --line-height-default: 1.6;
+  --link-underline-height: 2px;
+  --margin-bottom-default: 20px;
+  --max-width-md: 900px;
+  --max-width-sm: 800px;
+  --mobile-nav-height-offset: 70px;
+  --padding-default: 20px;
+  --section-padding-y: 80px;
+  --transform-translate-y-lg: -8px;
+  --transform-translate-y-md: -5px;
+  --transform-translate-y-sm: -3px;
+  --transition-ease: ease-in-out;
+  --transition-speed: 0.3s;
+
+  /* Hover states */
+  --button-hover-scale: 1.05;
+  --button-hover-shadow: 0 8px 20px #0003;
+  --card-hover-shadow: 0 10px 25px #00000026;
+
+  /* Validation colors */
+  --invalid-color: #dc3545;
+  --invalid-shadow: #DC35454C;
+  --valid-color: #28a745;
+  --valid-shadow: #28A7454C;
+
+  /* Specific element variables */
+  --about-p-font-size: 1.1em;
+  --about-padding: 40px;
+  --banner-h1-font-size: 4em;
+  --banner-height: 600px;
+  --banner-overlay-color: #0006;
+  --banner-text-shadow: 0 2px 4px #0000007F;
+  --card-h3-font-size: 1.8em;
+  --card-img-height: 200px;
+  --contact-icon-font-size: 20px;
+  --contact-input-padding-x: 15px;
+  --contact-input-padding-y: 8px;
+  --dark-mode-toggle-font-size: 24px;
+  --fixed-button-bottom: 80px;
+  --fixed-button-font-size: 1.1em;
+  --fixed-button-hover-color: #0CA;
+  --fixed-button-hover-shadow: 0 8px 20px #00B89499;
+  --fixed-button-padding-x: 25px;
+  --fixed-button-padding-y: 15px;
+  --fixed-button-right: 30px;
+  --fixed-button-shadow: 0 5px 15px #00B89466;
+  --icon-margin-right: 10px;
+  --list-item-line-height: 1.5;
+  --list-item-margin-bottom: 10px;
+  --list-item-padding-left: 20px;
+  --logo-font-size: 24px;
+  --message-box-border-radius: 10px;
+  --message-box-button-margin-top: 20px;
+  --message-box-button-padding-x: 20px;
+  --message-box-button-padding-y: 10px;
+  --message-box-padding: 30px;
+  --message-box-shadow: 0 8px 25px var(--light-shadow);
+  --mobile-nav-link-font-size: 22px;
+  --mobile-nav-link-padding-y: 15px;
+  --mobile-nav-top-offset: 70px;
+  --mobile-toggle-font-size: 30px;
+  --search-input-focus-bg: #fff;
+  --search-input-focus-text: #333;
+  --search-input-placeholder-color: #666;
+  --search-input-width-focus: 300px;
+  --search-input-width-initial: 150px;
+  --social-icons-bottom: 30px;
+  --social-icons-font-size: 1em;
+  --terms-privacy-h1-margin-bottom: 40px;
+  --terms-privacy-h2-margin-bottom: 15px;
+  --terms-privacy-h2-margin-top: 30px;
+  --terms-privacy-padding: 40px 20px;
+}
+
+.dark-mode,
+[data-bs-theme="dark"] {
+  --bs-navbar-toggler-border-color: white;
+  --button-hover-shadow: 0 8px 20px #FFFFFF1A;
+  --card-hover-shadow: 0 10px 25px #FFFFFF14;
+  --dark-mode-toggle-border-color: #ffffff1a;
+  --light-accent: #00CDA4;
+  --light-bg: #1a1a1a;
+  --light-border: #444;
+  --light-card-bg: #2a2a2a;
+  --light-input-bg: #3a3a3a;
+  --light-input-border: #555;
+  --light-input-focus: #a89bff;
+  --light-primary: #7F71E5;
+  --light-secondary: #BCB4FF;
+  --light-shadow: #FFFFFF14;
+  --light-text: #e0e0e0;
+  --search-input-focus-bg: #2a2a2a;
+  --search-input-focus-text: #e0e0e0;
+  --search-input-placeholder-color: #999;
+
+}

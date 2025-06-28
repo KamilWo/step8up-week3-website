@@ -1,0 +1,33 @@
+/* --- Utilities --- */
+
+/* Validation Feedback */
+.input-group.valid {
+  border-color: var(--valid-color);
+  box-shadow: 0 0 5px var(--valid-shadow);
+}
+
+.input-group.invalid {
+  border-color: var(--invalid-color);
+  box-shadow: 0 0 5px var(--invalid-shadow);
+}
+
+.input-group.valid i {
+  color: var(--valid-color);
+}
+
+.input-group.invalid i {
+  color: var(--invalid-color);
+}
+
+/* --- Animations --- */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}

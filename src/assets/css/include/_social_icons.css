@@ -1,0 +1,15 @@
+/* Social icons section */
+.social-icons-section {
+  z-index: 2;
+}
+
+.social-icons-section a {
+  color: var(--light-primary);
+  font-size: var(--social-icons-font-size);
+  transition: transform var(--transition-speed) var(--transition-ease), color var(--transition-speed) var(--transition-ease);
+}
+
+.social-icons-section a:hover {
+  transform: translateY(var(--transform-translate-y-md)) scale(1.1);
+  color: var(--light-accent);
+}

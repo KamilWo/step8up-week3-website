@@ -1,0 +1,122 @@
+/* Contact Form Elements */
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.contact-methods,
+.contact-form {
+  flex: 1 1 45%;
+  min-width: 300px;
+  background-color: var(--light-card-bg);
+  border-radius: var(--border-radius-medium);
+  box-shadow: var(--box-shadow-large);
+  padding: 30px;
+  text-align: left;
+  border: 1px solid var(--light-border);
+  transition: background-color var(--transition-speed) var(--transition-ease), box-shadow var(--transition-speed) var(--transition-ease);
+}
+
+.contact-methods h3,
+.contact-form h3 {
+  color: var(--light-primary);
+  margin-top: 0;
+  margin-bottom: var(--gap-large);
+  text-align: center;
+}
+
+.contact-methods ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-methods ul li {
+  margin-bottom: 15px;
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+}
+
+.contact-methods ul li i {
+  margin-right: 15px;
+  color: var(--light-accent);
+  font-size: var(--contact-icon-font-size);
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-medium);
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--light-input-border);
+  border-radius: var(--border-radius-small);
+  padding: var(--contact-input-padding-y) var(--contact-input-padding-x);
+  background-color: var(--light-input-bg);
+  transition: border-color var(--transition-speed) var(--transition-ease), box-shadow var(--transition-speed) var(--transition-ease);
+}
+
+.input-group i {
+  margin-right: var(--icon-margin-right);
+  color: var(--light-text);
+  transition: color var(--transition-speed) var(--transition-ease);
+}
+
+.input-group input,
+.input-group textarea {
+  flex-grow: 1;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 1em;
+  color: var(--light-text);
+  padding: 5px 0;
+}
+
+.input-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.contact-form .btn {
+  width: fit-content;
+  align-self: center;
+  padding: 12px 40px;
+}
+
+
+
+/* Message Box Styling */
+#message-box {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--light-card-bg);
+  color: var(--light-text);
+  padding: var(--message-box-padding);
+  border-radius: var(--message-box-border-radius);
+  box-shadow: var(--message-box-shadow);
+  z-index: 1001;
+  text-align: center;
+  animation: fade-in var(--transition-speed) ease-out;
+  min-width: 300px;
+}
+
+#message-box.show {
+  display: block;
+}
