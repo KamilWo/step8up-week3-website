@@ -23,6 +23,21 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
+  <script>
+    // This script runs before the page renders, blocking it briefly to ensure the correct theme is applied.
+    const userTheme = localStorage.getItem('theme');
+    if (userTheme === 'dark') {
+      document.documentElement.classList.add('dark-mode');
+    } else if (userTheme === 'light') {
+      document.documentElement.classList.remove('dark-mode');
+    } else {
+      // Handle system preference or default
+      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.classList.add('dark-mode');
+      }
+    }
+  </script>
+
   <!-- External CSS -->
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -114,8 +129,7 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-
-    <div class="social-icons text-center py-3">
+    <div class="social-icons-section text-center py-3">
       <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f fa-2x mx-2"></i></a>
       <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter fa-2x mx-2"></i></a>
       <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram fa-2x mx-2"></i></a>

@@ -22,6 +22,21 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+  <script>
+    // This script runs before the page renders, blocking it briefly to ensure the correct theme is applied.
+    const userTheme = localStorage.getItem('theme');
+    if (userTheme === 'dark') {
+      document.documentElement.classList.add('dark-mode');
+    } else if (userTheme === 'light') {
+      document.documentElement.classList.remove('dark-mode');
+    } else {
+      // Handle system preference or default
+      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.classList.add('dark-mode');
+      }
+    }
+  </script>
+
   <!-- External CSS -->
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
